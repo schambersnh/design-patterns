@@ -1,0 +1,7 @@
+**** STRATEGY PATTERN ****
+The strategy pattern provides family of algorithms that do certain things. It was developed because:
+1) Inheritance is flawed, as all subclasses will not want to implement a method in the exact same way as all other subclasses
+2) Using an interface per strategy is flawed, as the implementation then lives at the subclass level, and would be duplicated code.
+
+The strategy pattern resolves this by defining families of algorithms. Subclasses can then decide, within those algorithm families,
+which algorithms they choose to implement, and this can be modified at runtime.
