@@ -1,0 +1,15 @@
+*** OBSERVER PATTERN ***
+The observer pattern works similar to a newspaper subscription. Once you subscribe, you get all publications from
+ that news outlet. And when you unsubscribe, you stop getting them. The subject typically has a list of observers,
+ and each time something change, goes through the list and calls the observers update method. You can implement this
+ pattern in either a 'push' fashion or a 'pull' fashion. The push approach has the subject send everything to all
+ observers, and the pull approach lets the observers know that state has changed, and it is up to the observers
+ to pull what they want. There are pros and cons to each side.
+
+ There are java.util methods for Subject (Observable) and Observer (Observer), but they have many pitfalls. For example,
+ the Observable object not only has a confusing name, but it also a class, which violates the 'code to interface'
+ design principle.
+
+ *** Textbook Definition ***
+Observer - defines a one-to-many dependency between objects so that when one object changes state, all its
+dependents are notified and updated automatically

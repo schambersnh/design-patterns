@@ -1,7 +1,7 @@
-package main.strategy.duck;
+package main.strategypattern.duck;
 
-import main.strategy.behavior.fly.FlyBehavior;
-import main.strategy.behavior.quack.QuackBehavior;
+import main.strategypattern.behavior.fly.FlyBehavior;
+import main.strategypattern.behavior.quack.QuackBehavior;
 
 /**
  * Created by Stephen on 7/30/18.

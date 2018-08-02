@@ -1,6 +1,6 @@
-package main.strategy.duck;
+package main.strategypattern.duck;
 
-import main.strategy.behavior.fly.FlyRocketPowered;
+import main.strategypattern.behavior.fly.FlyRocketPowered;
 
 /**
  * Created by Stephen on 7/30/18.

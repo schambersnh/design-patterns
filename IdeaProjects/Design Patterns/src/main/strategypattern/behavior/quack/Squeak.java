@@ -1,4 +1,4 @@
-package main.strategy.behavior.quack;
+package main.strategypattern.behavior.quack;
 
 /**
  * Created by Stephen on 7/30/18.
