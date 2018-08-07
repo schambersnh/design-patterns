@@ -1,0 +1,26 @@
+*** DECORATOR PATTERN ***
+The decorator pattern provides a more flexible approach to subclassing. If you stricly used subclasses,
+you would have  class explosion and in flexible design. Take the starbuzz coffee example. You could
+have a Beverage super class, but then multiple subclasses like DarkRoastWithCaramel, DarkRoastWithCaramelAndMilk,
+etc. Additionally, having the base class have booleans for each added extensibility isn't great either. Consider
+if beverage had a boolean for if a beverage was Caramel or not. The subclasses then would reference that boolean
+to determine if the cost increased. If the price of caramel increased, you would have to change that in every subclass.
+Additionally, if someone wanted two caramels, this doesn't support that functionality.
+
+Instead, you have decorators that 'wrap' around each other, kind of like recursion. You keep instantiating a class
+over itself by passing in the current class object, and it appends whatever is appropriate to the decorator before
+returning the rest of the chain. Therefore, cost will be computed backwards. For example, if you had a Mocha Caramel
+Dark Roast, you would instantiate the classes as
+
+var = DarkRoast()
+var = Caramel(var)
+var = Mocha(var)
+var.cost()
+
+Mocha would then call caramels cost, which would then call dark roasts cost. Dark roast would act as the 'base case',
+returning a value, caramel would return its value plus dark roasts value, and mocha would return its value plus
+(carmael+dark roasts) value.
+
+*** Textbook Definition ***
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing
+for extending functionality.

@@ -1,0 +1,23 @@
+**** Factory Pattern ****
+The factory pattern takes coding to an implementation, aka the 'new' keyword, and abstracts it away into a pattern.
+ The simplefactory pattern, as most think of the factory pattern, is simly that. Taking an if(type=x) type=X chain
+ and putting it in the class where you simply pass the type.
+
+ The real factory pattern has parallel class structures called Creators and Products. There is typically an abstract
+ creator, which will handle things that all creators would need (for example, all pizza stores when a pizza is ordered
+ need to first bake it, cut it, etc. The way these are implemented are up to the subclass creators. Perhaps they want
+ to bake it at different temperatures, cut it differently, etc.
+
+ The products behave in a similar fashion. There is an abstract product, and subclassed products underneath it. The
+ abstract product allows for the stores to code to an interface, rather than an implementation.
+
+ **** Textbook Definition ****
+ Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets
+ a class defer instantiation to the subclasses.
+
+
+
+ **** Special Note: Abstract Factory ****
+ Gives an interface for creating a family of products. This decouples the code from the factories that
+ actually create the products. This is used to ensure that clients create products that belong together. It is
+ similar to the factory pattern, but different. It's almost like a factory for a factory.
