@@ -1,0 +1,10 @@
+**** Command Pattern ****
+The command pattern encapsulates requests so that the invoker is loosley coupled from the receiver (the class that
+actually performs the requests). Usually, you will have a command object, with an execute method, and that command
+object will have a reference to a receiver that actually does all the work. This allows the client to simply create
+command objects and call execute, and swap them out at will, without ever needing to know about nitty gritty application
+code.
+
+**** Textbook Definition ****
+In object-oriented programming, the command pattern is a behavioral design pattern in which an object is used to
+encapsulate all information needed to perform an action or trigger an event at a later time.
